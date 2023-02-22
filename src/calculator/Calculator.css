@@ -1,0 +1,22 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+.display {
+  text-align: right;
+}
+.history {
+}
+.output {
+}
+.numPad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.numPad2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+button {
+}
