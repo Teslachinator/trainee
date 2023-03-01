@@ -97,7 +97,7 @@ const Counter = () => {
   };
 
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <div onClick={decrement} class="minus">
         Минус
       </div>

@@ -1,0 +1,57 @@
+.popup_bg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.353);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.popup_bg.popActive {
+  opacity: 1;
+
+  pointer-events: all;
+}
+
+.popup {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 350px;
+  height: max-content;
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+.popup.popActive {
+  transform: scale(1);
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    margin: 30px 20px;
+    padding: 10px 0;
+  }
+  &__main {
+  }
+  &__user {
+    margin: 20px;
+    display: flex;
+    box-shadow: -10px -10px 30px #ffffff,
+      10px 10px 30px rgba(174, 174, 192, 0.4);
+    background: #f7f7f7;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  &__user p {
+    text-align: center;
+  }
+  &__user-Card {
+  }
+}
