@@ -98,13 +98,16 @@ const Counter = () => {
 
   return (
     <div className="wrapper">
-      <div onClick={decrement} class="minus">
+      <div onClick={decrement} className="minus">
         Минус
       </div>
-      <div style={{ background: `hsl(${color}, 100%, 50%)` }} class="number">
+      <div
+        style={{ background: `hsl(${color}, 100%, 50%)` }}
+        className="number"
+      >
         <p>{count}°C</p>
       </div>
-      <div onClick={increment} class="plus">
+      <div onClick={increment} className="plus">
         Плюс
       </div>
     </div>

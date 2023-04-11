@@ -7,6 +7,7 @@ const Popup = ({ active, setActive, children }) => {
       className={active ? "popup_bg popActive" : "popup_bg"}
       onClick={() => setActive(false)}
     >
+
       <div
         className={active ? "popup popActive" : "popup"}
         onClick={(e) => e.stopPropagation()}

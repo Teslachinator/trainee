@@ -3,7 +3,7 @@ import { TiMinus, TiPlus } from "react-icons/ti";
 import "./todo.css";
 
 const Todo = () => {
-  const defState = [{ itemName: "гашик", value: 2, status: false }];
+  const defState = [{ itemName: "todo", value: 2, status: false }];
   const [item, setItem] = useState(defState);
   const [inputName, setInputName] = useState("");
 
