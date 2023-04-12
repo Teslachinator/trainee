@@ -18,6 +18,7 @@ const Counter = () => {
         break;
       case count > 35:
         setColor(0);
+        break;
       default:
         break;
     }

@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Calculator from "./calculator/Calculator";
 import Counter from "./counter/Counter";
 import SearchFilter from "./searchData/SearchFilter";
@@ -6,7 +7,7 @@ import Todo from "./Todo-list/Todo";
 import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-
+import "./components/Bootstrap.css";
 function App() {
   return (
     <div className="App">
