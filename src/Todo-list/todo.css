@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   background: #56b4f0;
+  min-width: 320px;
   padding: 10px;
   gap: 20px;
   box-shadow: 30px 54px 67px rgba(209, 217, 230, 0.67), 30px 24px 34px rgba(209, 217, 230, 0.34), 30px 28px 38px rgba(209, 217, 230, 0.4), 30px 35px 45px rgba(209, 217, 230, 0.48), -20px -63px 65px rgba(255, 255, 255, 0.75), -20px -36.8341px 42.6719px rgba(255, 255, 255, 0.539141), -20px -31.3638px 35.026px rgba(255, 255, 255, 0.44708), -20px -28.4185px 30.1667px rgba(255, 255, 255, 0.375);
@@ -27,10 +28,12 @@
   margin: 5px 0;
 }
 .listItem__item {
+  word-break: break-all;
   margin: 0;
 }
-
-.item__count {
+.listItem__count {
+  min-width: 30%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }

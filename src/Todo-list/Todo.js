@@ -95,7 +95,7 @@ const Todo = () => {
               <div className="listItem__container">
                 <p className="listItem__item">{item.itemName}</p>
                 <div
-                  className="item__count"
+                  className="listItem__count"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <TiMinus onClick={() => handleQuantityDecrease(index)} />
