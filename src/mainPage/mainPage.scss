@@ -1,0 +1,26 @@
+// body {
+//   margin: 0;
+//   background: #f1f1f1;
+//   position: relative;
+// }
+
+.MainContainer {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 700px;
+  height: 400px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 0 30px 15px rgba(200, 200, 200, 0.75);
+  overflow: hidden;
+}
+
+.MainPart {
+  position: absolute;
+  &__figure {
+    border-radius: 50%;
+  }
+}

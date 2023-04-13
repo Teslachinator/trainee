@@ -10,6 +10,8 @@ const btnArr = [
   { vol: "+/-", value: ACTIONS.OPERATION },
   { vol: "%", value: ACTIONS.OPERATION },
   { vol: "/", value: ACTIONS.OPERATION },
+  { vol: "C", value: ACTIONS.CLEAR },
+
   { vol: "7", value: ACTIONS.ADD_DIGIT },
   { vol: "8", value: ACTIONS.ADD_DIGIT },
   { vol: "9", value: ACTIONS.ADD_DIGIT },
@@ -22,9 +24,8 @@ const btnArr = [
   { vol: "2", value: ACTIONS.ADD_DIGIT },
   { vol: "3", value: ACTIONS.ADD_DIGIT },
   { vol: "+", value: ACTIONS.OPERATION },
-  { vol: "0", value: ACTIONS.ADD_DIGIT },
   { vol: ".", value: ACTIONS.ADD_DIGIT },
-  { vol: "C", value: ACTIONS.CLEAR },
+  { vol: "0", value: ACTIONS.ADD_DIGIT },
   { vol: "DEL", value: ACTIONS.DELETE },
   { vol: "=", value: ACTIONS.CALC },
 ];
