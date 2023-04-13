@@ -46,8 +46,6 @@ const Todo = () => {
       return inputName !== task;
     });
     setItem(newTodo);
-
-    console.log(item);
   };
 
   return (

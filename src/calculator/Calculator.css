@@ -21,7 +21,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.numPad2 {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+.numPad:last-child {
+}
+.history-list {
+  display: flex;
+  flex-direction: row;
+
+  text-align: right;
+  width: 100%;
 }

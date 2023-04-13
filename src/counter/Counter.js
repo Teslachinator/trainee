@@ -27,7 +27,6 @@ const Counter = () => {
   const increment = () => {
     setColor(color - 2);
     setCount(count + 1);
-    console.log(color);
 
     // switch (true) {
     //   case count === 15:
@@ -63,7 +62,6 @@ const Counter = () => {
   const decrement = () => {
     setCount(count - 1);
     setColor(color + 2);
-    console.log(color);
     // switch (true) {
     //   case count === 16:
     //     setColor(202);

@@ -9,15 +9,14 @@ import {
   setCurrentValue,
   setOperator,
 } from "../store/calculatorSlice";
-import { Button } from "react-bootstrap";
+import { Button, ListGroup } from "react-bootstrap";
 
 const Calculator = () => {
   const dispatch = useDispatch();
-  const { currentValue } = useSelector((state) => state.calculator);
-  console.log(btnArr);
+  const { currentValue, history, result } = useSelector(
+    (state) => state.calculator
+  );
   const handleFormat = (value, vol) => {
-    console.log(value, vol);
-
     if (value === "add-digit") {
       dispatch(setCurrentValue(vol));
     } else if (value === "operation") {
@@ -30,13 +29,15 @@ const Calculator = () => {
       dispatch(deleteCurrent());
     }
   };
-
+  console.log(history);
   return (
-    <div className="container-sm">
-      <div className="history">123</div>
+    <div className="">
       <div className="calculator">
         <div className="display">
-          <div className="output">{currentValue}</div>
+          <div className="output">
+            {currentValue}
+            {result}
+          </div>
         </div>
         <div className="numPad">
           {btnArr.map((item) => (
@@ -50,6 +51,15 @@ const Calculator = () => {
             </Button>
           ))}
         </div>
+      </div>
+      <div className="history reverse">
+        {history.map((item, index) => (
+          <ListGroup key={index}>
+            <ListGroup.Item className="history-list mt-2">
+              {item.previous} {item.operator} {item.last} = {item.result}
+            </ListGroup.Item>
+          </ListGroup>
+        ))}
       </div>
     </div>
   );
